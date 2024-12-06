@@ -1,0 +1,10 @@
+<Window x:Class="FamousTechCollabApp.Windows.EphemeralChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ephemeral Chat" Height="400" Width="600">
+    <Grid>
+        <ListBox Name="ChatListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="580" Height="300"/>
+        <TextBox Name="MessageTextBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,100,10" Width="460" Height="30"/>
+        <Button Content="Send" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Width="80" Click="SendMessageButton_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+<Window x:Class="FamousTechCollabApp.Windows.CodeCollaborationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Code Collaboration" Height="400" Width="600">
+    <Grid>
+        <TextBox Name="CodeTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="580" Height="300" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+        <ComboBox Name="LanguageComboBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Width="200">
+            <ComboBoxItem Content="C#" />
+            <ComboBoxItem Content="Python" />
+            <ComboBoxItem Content="JavaScript" />
+        </ComboBox>
+        <Button Content="Save Snippet" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Width="100" Click="SaveSnippetButton_Click"/>
+    </Grid>
+</Window>
